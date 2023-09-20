@@ -1,6 +1,7 @@
 package net.chris.bastimod;
 
 import com.mojang.logging.LogUtils;
+import net.chris.bastimod.block.ModBlocks;
 import net.chris.bastimod.item.ModCreativeModTab;
 import net.chris.bastimod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -33,6 +34,8 @@ public class BastiMod
 
         ModCreativeModTab.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
 

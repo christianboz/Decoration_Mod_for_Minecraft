@@ -1,6 +1,7 @@
 package net.chris.bastimod.item;
 
 import net.chris.bastimod.BastiMod;
+import net.chris.bastimod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,7 +21,11 @@ public class ModCreativeModTab {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.SAPPHIRE.get());
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
+
                         pOutput.accept(Items.SLIME_BLOCK);
+
+                        pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                        pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
 
                     })
                     .build());
