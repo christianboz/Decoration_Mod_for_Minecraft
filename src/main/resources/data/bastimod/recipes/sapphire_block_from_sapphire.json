@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "bastimod:sapphire"
+    }
+  },
+  "result": {
+    "item": "bastimod:sapphire_block"
+  }
+}

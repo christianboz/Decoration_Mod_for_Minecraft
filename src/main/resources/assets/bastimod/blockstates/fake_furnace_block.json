@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bastimod:block/fake_furnace_block"
+    }
+  }
+}

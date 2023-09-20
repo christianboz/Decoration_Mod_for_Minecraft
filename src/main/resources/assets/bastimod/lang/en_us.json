@@ -2,8 +2,12 @@
   "item.bastimod.sapphire": "Sapphire",
   "item.bastimod.raw_sapphire": "Raw Sapphire",
 
+  "item.bastimod.metal_detector": "Metal Detector",
+
   "block.bastimod.sapphire_block": "Block of Sapphire",
   "block.bastimod.raw_sapphire_block": "Block of Raw Sapphire",
+
+  "block.bastimod.fake_furnace_block": "Fake Furnace",
 
   "creativetab.basti_tab": "Sapphire Basti Tab"
 }

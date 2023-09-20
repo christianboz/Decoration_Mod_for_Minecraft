@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bastimod:sapphire_block"
+    }
+  ],
+  "result": {
+    "item": "bastimod:sapphire",
+    "count": 9
+  }
+}
