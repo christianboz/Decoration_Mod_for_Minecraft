@@ -32,7 +32,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_COPPER_BLOCK)));
 
     public static final RegistryObject<Block> FAKE_FURNACE_BLOCK = registerBlock("fake_furnace_block",
-            () -> new FurnaceBlock(BlockBehaviour.Properties.copy(Blocks.FURNACE)));
+            () -> new FurnaceBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.5F)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
