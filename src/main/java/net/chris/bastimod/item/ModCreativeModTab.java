@@ -21,9 +21,12 @@ public class ModCreativeModTab {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.SAPPHIRE.get());
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
-                        pOutput.accept(ModItems.METAL_DETECTOR.get());
 
-                        pOutput.accept(Items.SLIME_BLOCK);
+                        pOutput.accept(ModItems.METAL_DETECTOR.get());
+                        pOutput.accept(ModItems.STRAWBERRY.get());
+                        pOutput.accept(ModItems.PINE_CONE.get());
+
+//                        pOutput.accept(Items.SLIME_BLOCK);
 
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
