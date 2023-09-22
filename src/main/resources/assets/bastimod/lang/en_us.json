@@ -5,9 +5,14 @@
   "item.bastimod.raw_sapphire": "Raw Sapphire",
 
   "item.bastimod.metal_detector": "Metal Detector",
+  "tooltip.bastimod.metal_detector.tooltip": "Finds valuables underground!",
 
   "block.bastimod.sapphire_block": "Block of Sapphire",
   "block.bastimod.raw_sapphire_block": "Block of Raw Sapphire",
+  "block.bastimod.sapphire_ore": "Sapphire Ore",
+  "block.bastimod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.bastimod.nether_sapphire_ore": "Nether Sapphire Ore",
+  "block.bastimod.end_stone_sapphire_ore": "End Stone Sapphire Ore",
 
   "block.bastimod.fake_furnace_block": "Fake Furnace",
 

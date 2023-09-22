@@ -1,8 +1,12 @@
 package net.chris.bastimod.datagen;
 
 import net.chris.bastimod.BastiMod;
+import net.chris.bastimod.block.ModBlocks;
+import net.chris.bastimod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.tags.BlockTags;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -16,6 +20,18 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-//        this.tag(ModTags.Blocks.METAL_DETECTOR_VALUABLES);
+        this.tag(ModTags.Blocks.METAL_DETECTOR_VALUABLES).add(ModBlocks.SAPPHIRE_BLOCK.get()).addTags(Tags.Blocks.ORES);
+
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.SAPPHIRE_BLOCK.get(),
+                        ModBlocks.RAW_SAPPHIRE_BLOCK.get());
+
+        this.tag(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.SAPPHIRE_BLOCK.get());
+
+        this.tag(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
+
+//        this.tag(BlockTags.NEEDS_STONE_TOOL).add(ModBlocks.NETHER_SAPPHIRE_BLOCK.get());
+
+//        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL).add(ModBlocks.END_STONE_SAPPHIRE_BLOCK.get());
     }
 }
