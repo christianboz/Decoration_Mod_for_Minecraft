@@ -2,11 +2,13 @@ package net.chris.bastimod.item;
 
 import net.chris.bastimod.BastiMod;
 import net.chris.bastimod.block.ModBlocks;
+import net.chris.bastimod.potion.ModPotions;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -19,14 +21,13 @@ public class ModCreativeModTab {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAPPHIRE.get()))
                     .title(Component.translatable("creativetab.basti_tab"))
                     .displayItems((pParameters, pOutput) -> {
+
                         pOutput.accept(ModItems.SAPPHIRE.get());
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
 
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModItems.STRAWBERRY.get());
                         pOutput.accept(ModItems.PINE_CONE.get());
-
-//                        pOutput.accept(Items.SLIME_BLOCK);
 
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
@@ -36,6 +37,8 @@ public class ModCreativeModTab {
                         pOutput.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
+
+                        pOutput.accept((ItemLike) ModPotions.TEA.get());
 
                     })
                     .build());

@@ -3,15 +3,20 @@ package net.chris.bastimod.datagen;
 import net.chris.bastimod.BastiMod;
 import net.chris.bastimod.block.ModBlocks;
 import net.chris.bastimod.item.ModItems;
+import net.chris.bastimod.potion.ModPotions;
+import net.chris.bastimod.util.BetterBrewingRecipe;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.data.tags.TagsProvider;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -45,6 +50,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.SAPPHIRE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
                 .save(pWriter);
+
+        BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.WATER, Blocks.OAK_LEAVES, ModPotions.TEA.get()));
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

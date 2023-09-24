@@ -1,0 +1,7 @@
+// 1.20.1	2023-09-24T17:17:21.0174431	Tags for minecraft:block mod id bastimod
+3414652fec6a61fc45fcf18e71b2019b2aabc3a3 data/bastimod/tags/blocks/metal_detector_valuables.json
+e16ab564fd2fdd09cb20337426ac61ee579b159f data/forge/tags/blocks/needs_netherite_tool.json
+c309be255b9931b2c9ccc31f629cdd92fcc95416 data/minecraft/tags/blocks/mineable/pickaxe.json
+7712a3e7ace362f138e6bc060bdcda2bdd65ba12 data/minecraft/tags/blocks/needs_diamond_tool.json
+c1909b35343b9f531581f457396557394f6032b2 data/minecraft/tags/blocks/needs_iron_tool.json
+9b54c51f6dfb431110f1bedd0aaeb4c9a4683a37 data/minecraft/tags/blocks/needs_stone_tool.json

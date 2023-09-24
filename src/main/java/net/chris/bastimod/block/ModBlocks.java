@@ -41,7 +41,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_COPPER_BLOCK)));
 
     public static final RegistryObject<Block> FAKE_BREWING_STAND_BLOCK = registerBlock("fake_brewing_stand_block",
-            () -> new FakeBrewingStandBlock(BlockBehaviour.Properties.copy(Blocks.BREWING_STAND)));
+            () -> new FakeBrewingStandBlock(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

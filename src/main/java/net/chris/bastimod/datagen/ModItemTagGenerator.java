@@ -14,8 +14,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
 
     public ModItemTagGenerator(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pLookupProvider,
-                               CompletableFuture<TagLookup<Block>> pBlockTags, String modId, @Nullable ExistingFileHelper existingFileHelper) {
-        super(pOutput, pLookupProvider, pBlockTags, modId, existingFileHelper);
+                               CompletableFuture<TagLookup<Block>> pBlockTags, @Nullable ExistingFileHelper existingFileHelper) {
+        super(pOutput, pLookupProvider, pBlockTags, BastiMod.MOD_ID, existingFileHelper);
     }
 
     @Override
