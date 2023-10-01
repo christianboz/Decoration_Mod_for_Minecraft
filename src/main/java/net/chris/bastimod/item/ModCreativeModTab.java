@@ -2,13 +2,10 @@ package net.chris.bastimod.item;
 
 import net.chris.bastimod.BastiMod;
 import net.chris.bastimod.block.ModBlocks;
-import net.chris.bastimod.potion.ModPotions;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -38,7 +35,7 @@ public class ModCreativeModTab {
                         pOutput.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
 
-                        pOutput.accept((ItemLike) ModPotions.TEA.get());
+//                        pOutput.accept((ItemLike) ModPotions.TEA.get());
 
                     })
                     .build());

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bastimod:block/ash_block"
+    }
+  }
+}

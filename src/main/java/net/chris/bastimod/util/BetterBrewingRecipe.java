@@ -35,7 +35,7 @@ public class BetterBrewingRecipe implements IBrewingRecipe {
 
     @Override
     public boolean isIngredient(ItemStack ingredient) {
-        return ingredient.getItem() == this.ingredient;
+        return (ingredient.getItem() == this.ingredient || ingredient.getItem() == this.ingredient_block.asItem());
     }
 
     @Override

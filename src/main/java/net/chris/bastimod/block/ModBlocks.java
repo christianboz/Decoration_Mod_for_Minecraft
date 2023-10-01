@@ -21,8 +21,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    // eigenes Verhalten eines Blocks mit BlockBehaviour.Properties.of und dann die jeweiligen Sachen bei IRON_BLOCK definieren
-    // einzelne Sachen wie Sound sind überschreibbar
+
+    public static final RegistryObject<Block> ASH_BLOCK = registerBlock("ash_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND)));
 
     public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
