@@ -48,7 +48,7 @@ public class FakeBrewingStandBlock extends BaseEntityBlock {
      * whenever possible. Implementing/overriding is fine.
      */
     public RenderShape getRenderShape(BlockState pState) {
-        return RenderShape.MODEL;
+        return pState.getRenderShape();
     }
 
     public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {

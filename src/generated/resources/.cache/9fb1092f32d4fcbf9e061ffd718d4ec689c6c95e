@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-01T13:43:07.3474027	Recipes
+// 1.20.1	2023-10-04T17:42:28.0169913	Recipes
 d0d1bc5a8ba496feb65e6e3c69ea0505eb6ee760 data/bastimod/advancements/recipes/misc/ash_block.json
 ed415c512421a97ec68863e1bedf0b48fa7025ae data/bastimod/advancements/recipes/misc/sapphire.json
 40e2a22fe3995dedfa257e9a6636819bdcf3d962 data/bastimod/advancements/recipes/misc/sapphire_block.json
@@ -12,7 +12,7 @@ a5df7ebb4afa25bf9742a2827d3597b1668c7b8c data/bastimod/advancements/recipes/misc
 d5f67c423ebb210ea09a2ed8b1786605ccb1ba12 data/bastimod/advancements/recipes/misc/sapphire_from_smelting_nether_sapphire_ore.json
 eadf48855c3172a7bf1f67118ebd3ae6eeab9b25 data/bastimod/advancements/recipes/misc/sapphire_from_smelting_raw_sapphire.json
 9f01b093c1b3a9bf0511777589d5c89255fced20 data/bastimod/advancements/recipes/misc/sapphire_from_smelting_sapphire_ore.json
-5c0ec60473644d5c5e3362d401b220376bc21881 data/bastimod/recipes/ash_block.json
+67ced601d61d652e512d6abe9d30025696004458 data/bastimod/recipes/ash_block.json
 75a790e9baa97eab93d6b3bdd00759c40dc1ea9b data/bastimod/recipes/sapphire.json
 5752f085748e6a411b9cdaada57eec8cb5739479 data/bastimod/recipes/sapphire_block.json
 396172b7f90267cb87215b979847bf5354ecb78b data/bastimod/recipes/sapphire_from_blasting_deepslate_sapphire_ore.json

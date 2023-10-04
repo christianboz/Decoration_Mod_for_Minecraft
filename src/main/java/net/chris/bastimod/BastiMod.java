@@ -4,10 +4,14 @@ import com.mojang.logging.LogUtils;
 import net.chris.bastimod.block.ModBlocks;
 import net.chris.bastimod.item.ModCreativeModTab;
 import net.chris.bastimod.item.ModItems;
-import net.chris.bastimod.item.ModPotions;
+import net.chris.bastimod.potion.ModPotions;
+import net.chris.bastimod.util.BetterBrewingRecipe;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.alchemy.Potions;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -36,7 +40,6 @@ public class BastiMod
         ModBlocks.register(modEventBus);
         ModPotions.register(modEventBus);
 
-
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -45,7 +48,9 @@ public class BastiMod
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        event.enqueueWork(() -> {
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.WATER, Blocks.OAK_LEAVES, ModPotions.TEA_POTION.get()));
+        });
     }
 
     // Add the example block item to the building blocks tab
@@ -69,11 +74,5 @@ public class BastiMod
         public static void onClientSetup(FMLClientSetupEvent event) {
 
         }
-    }
-
-    private void setup(final FMLCommonSetupEvent event){
-        event.enqueueWork(() -> {
-
-        });
     }
 }

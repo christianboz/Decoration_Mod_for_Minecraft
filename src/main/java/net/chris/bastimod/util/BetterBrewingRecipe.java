@@ -14,15 +14,15 @@ public class BetterBrewingRecipe implements IBrewingRecipe {
     private final Block ingredient_block;
     private final Potion output;
 
-    public BetterBrewingRecipe(Potion potion, Item ingredient, Potion output) {
-        this.input = potion;
+    public BetterBrewingRecipe(Potion input, Item ingredient, Potion output) {
+        this.input = input;
         this.ingredient = ingredient;
         this.ingredient_block = Block.byItem(ingredient);
         this.output = output;
     }
 
-    public BetterBrewingRecipe(Potion potion, Block ingredient, Potion output) {
-        this.input = potion;
+    public BetterBrewingRecipe(Potion input, Block ingredient, Potion output) {
+        this.input = input;
         this.ingredient = ingredient.asItem();
         this.ingredient_block = ingredient;
         this.output = output;
@@ -40,7 +40,9 @@ public class BetterBrewingRecipe implements IBrewingRecipe {
 
     @Override
     public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
-        if(!this.isInput(input) || !this.isIngredient(ingredient)) return ItemStack.EMPTY;
+        if(!this.isInput(input) || !this.isIngredient(ingredient)) {
+            return ItemStack.EMPTY;
+        }
 
         ItemStack itemStack = new ItemStack(input.getItem());
         itemStack.setTag(new CompoundTag());

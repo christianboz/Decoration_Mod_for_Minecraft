@@ -2,6 +2,7 @@ package net.chris.bastimod.datagen;
 
 import net.chris.bastimod.BastiMod;
 import net.chris.bastimod.item.ModItems;
+import net.chris.bastimod.potion.ModPotions;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -22,6 +23,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.METAL_DETECTOR);
         simpleItem(ModItems.PINE_CONE);
         simpleItem(ModItems.STRAWBERRY);
+
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item){

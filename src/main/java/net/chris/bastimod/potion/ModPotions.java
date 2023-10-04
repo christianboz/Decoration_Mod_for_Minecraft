@@ -1,4 +1,4 @@
-package net.chris.bastimod.item;
+package net.chris.bastimod.potion;
 
 import net.chris.bastimod.BastiMod;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -12,7 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModPotions {
     public static final DeferredRegister<Potion> POTIONS = DeferredRegister.create(ForgeRegistries.POTIONS, BastiMod.MOD_ID);
 
-    public static final RegistryObject<Potion> TEA = POTIONS.register("tea_potion",
+    public static final RegistryObject<Potion> TEA_POTION = POTIONS.register("tea_potion",
             () -> new Potion(new MobEffectInstance(MobEffects.HEAL, 1)));
 
 
