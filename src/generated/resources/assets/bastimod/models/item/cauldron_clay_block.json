@@ -1,3 +1,6 @@
 {
-  "parent": "bastimod:block/cauldron_clay_block"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bastimod:block/cauldron_clay_block"
+  }
 }

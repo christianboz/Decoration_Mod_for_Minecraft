@@ -29,7 +29,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.NETHER_SAPPHIRE_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
 
-        blockWithItem(ModBlocks.FAKE_BREWING_STAND_BLOCK);
+//        blockWithItem(ModBlocks.FAKE_BREWING_STAND_BLOCK);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
