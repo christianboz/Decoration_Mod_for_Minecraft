@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bastimod:block/cauldron_reinforced_copper_block"
+    }
+  }
+}

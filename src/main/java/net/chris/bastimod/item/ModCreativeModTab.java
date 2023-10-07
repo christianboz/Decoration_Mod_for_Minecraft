@@ -28,14 +28,15 @@ public class ModCreativeModTab {
 
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
-                        pOutput.accept(ModBlocks.FAKE_BREWING_STAND_BLOCK.get());
-
                         pOutput.accept(ModBlocks.SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
 
-//                        pOutput.accept((ItemLike) ModPotions.TEA.get());
+                        pOutput.accept(ModBlocks.CAULDRON_CLAY_BLOCK.get());
+                        pOutput.accept(ModBlocks.CAULDRON_COPPER_BLOCK.get());
+                        pOutput.accept(ModBlocks.CAULDRON_REINFORCED_COPPER_BLOCK.get());
+                        pOutput.accept(ModItems.MIXTURE_BOTTLE.get());
 
                     })
                     .build());

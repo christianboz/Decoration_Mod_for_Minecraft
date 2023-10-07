@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "bastimod:cauldron_copper_block"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "G G",
+    "GCG",
+    "GGG"
+  ],
+  "result": {
+    "item": "bastimod:cauldron_reinforced_copper_block"
+  },
+  "show_notification": true
+}

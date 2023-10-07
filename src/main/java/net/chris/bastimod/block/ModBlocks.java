@@ -1,7 +1,7 @@
 package net.chris.bastimod.block;
 
 import net.chris.bastimod.BastiMod;
-import net.chris.bastimod.block.custom.FakeBrewingStandBlock;
+//import net.chris.bastimod.block.custom.FakeBrewingStandBlock;
 import net.chris.bastimod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -22,6 +22,17 @@ public class ModBlocks {
     public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
 
+    public static final RegistryObject<Block> CAULDRON_CLAY_BLOCK = registerBlock("cauldron_clay_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
+    public static final RegistryObject<Block> CAULDRON_COPPER_BLOCK = registerBlock("cauldron_copper_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
+    public static final RegistryObject<Block> CAULDRON_REINFORCED_COPPER_BLOCK = registerBlock("cauldron_reinforced_copper_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
+//    public static final RegistryObject<Block> MIXTURE_BARREL_BLOCK = registerBlock("mixture_barrel_block",
+//            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BARREL)));
+//    public static final RegistryObject<Block> REINFORCED_MIXTURE_BARREL_BLOCK = registerBlock("reinforced_mixture_barrel_block",
+//            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BARREL)));
+
     public static final RegistryObject<Block> ASH_BLOCK = registerBlock("ash_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND)));
 
@@ -41,8 +52,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> RAW_SAPPHIRE_BLOCK = registerBlock("raw_sapphire_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_COPPER_BLOCK)));
 
-    public static final RegistryObject<Block> FAKE_BREWING_STAND_BLOCK = registerBlock("fake_brewing_stand_block",
-            () -> new FakeBrewingStandBlock(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
+//    public static final RegistryObject<Block> FAKE_BREWING_STAND_BLOCK = registerBlock("fake_brewing_stand_block",
+//            () -> new FakeBrewingStandBlock(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

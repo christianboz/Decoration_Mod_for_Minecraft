@@ -2,7 +2,6 @@ package net.chris.bastimod.datagen;
 
 import net.chris.bastimod.BastiMod;
 import net.chris.bastimod.item.ModItems;
-import net.chris.bastimod.potion.ModPotions;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -23,11 +22,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.METAL_DETECTOR);
         simpleItem(ModItems.PINE_CONE);
         simpleItem(ModItems.STRAWBERRY);
+        simpleItem(ModItems.MIXTURE_BOTTLE);
 
     }
 
-    private ItemModelBuilder simpleItem(RegistryObject<Item> item){
-        return withExistingParent(item.getId().getPath(),
+    private void simpleItem(RegistryObject<Item> item){
+        withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(BastiMod.MOD_ID, "item/" + item.getId().getPath()));
     }

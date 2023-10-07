@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bastimod:block/cauldron_clay_block"
+    }
+  }
+}

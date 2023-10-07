@@ -5,6 +5,9 @@
     "bastimod:sapphire_ore",
     "bastimod:deepslate_sapphire_ore",
     "bastimod:nether_sapphire_ore",
-    "bastimod:end_stone_sapphire_ore"
+    "bastimod:end_stone_sapphire_ore",
+    "bastimod:cauldron_clay_block",
+    "bastimod:cauldron_copper_block",
+    "bastimod:cauldron_reinforced_copper_block"
   ]
 }
