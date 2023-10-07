@@ -35,7 +35,6 @@ public class ModCreativeModTab {
                         pOutput.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
 
-//                        pOutput.accept((ItemLike) ModPotions.TEA.get());
 
                     })
                     .build());

@@ -3,16 +3,23 @@
   "item.bastimod.strawberry": "Strawberry",
   "item.bastimod.pine_cone": "Pine Cone",
   "item.bastimod.raw_sapphire": "Raw Sapphire",
+  "item.bastimod.mixture_bottle": "Mixture Bottle",
 
   "item.minecraft.potion.effect.tea_potion": "Tea",
   "item.minecraft.splash_potion.effect.tea_potion": "Splash Tea",
   "item.minecraft.lingering_potion.effect.tea_potion": "Lingering Tea",
+  "item.minecraft.potion.effect.mixture_bottle_potion": "Mixture Bottle",
+  "item.minecraft.splash_potion.effect.mixture_bottle_potion": "Mixture Bottle",
+  "item.minecraft.lingering_potion.effect.mixture_bottle_potion": "Mixture Bottle",
 
   "item.bastimod.metal_detector": "Metal Detector",
   "tooltip.bastimod.metal_detector.tooltip": "Finds valuables underground!",
 
   "block.bastimod.sapphire_block": "Block of Sapphire",
   "block.bastimod.ash_block": "Ash",
+  "block.bastimod.cauldron_copper_block": "Copper Cauldron",
+  "block.bastimod.cauldron_clay_block": "Clay Cauldron",
+  "block.bastimod.cauldron_reinforced_copper_block": "Reinforced Copper Cauldron",
   "block.bastimod.raw_sapphire_block": "Block of Raw Sapphire",
   "block.bastimod.sapphire_ore": "Sapphire Ore",
   "block.bastimod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",

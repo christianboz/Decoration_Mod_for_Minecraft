@@ -15,6 +15,10 @@ public class ModPotions {
     public static final RegistryObject<Potion> TEA_POTION = POTIONS.register("tea_potion",
             () -> new Potion(new MobEffectInstance(MobEffects.HEAL, 1)));
 
+    //TODO Glas-Behälter mit 3x Füllungen
+//    public static final RegistryObject<Potion> MIXTURE_BOTTLE_POTION = POTIONS.register("mixture_bottle_potion",
+//            () -> new Potion());
+
 
     public static void register(IEventBus eventBus) {
         POTIONS.register(eventBus);

@@ -22,6 +22,17 @@ public class ModBlocks {
     public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
 
+    public static final RegistryObject<Block> CAULDRON_CLAY_BLOCK = registerBlock("cauldron_clay_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
+    public static final RegistryObject<Block> CAULDRON_COPPER_BLOCK = registerBlock("cauldron_copper_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
+    public static final RegistryObject<Block> CAULDRON_REINFORCED_COPPER_BLOCK = registerBlock("cauldron_reinforced_copper_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
+//    public static final RegistryObject<Block> MIXTURE_BARREL_BLOCK = registerBlock("mixture_barrel_block",
+//            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BARREL)));
+//    public static final RegistryObject<Block> REINFORCED_MIXTURE_BARREL_BLOCK = registerBlock("reinforced_mixture_barrel_block",
+//            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BARREL)));
+
     public static final RegistryObject<Block> ASH_BLOCK = registerBlock("ash_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND)));
 

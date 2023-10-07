@@ -15,10 +15,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        blockWithItem(ModBlocks.ASH_BLOCK);
+        blockWithItem(ModBlocks.CAULDRON_CLAY_BLOCK);
+        blockWithItem(ModBlocks.CAULDRON_COPPER_BLOCK);
+        blockWithItem(ModBlocks.CAULDRON_REINFORCED_COPPER_BLOCK);
+//        blockWithItem(ModBlocks.MIXTURE_BARREL_BLOCK);
+//        blockWithItem(ModBlocks.REINFORCED_MIXTURE_BARREL_BLOCK);
+
         blockWithItem(ModBlocks.SAPPHIRE_BLOCK);
         blockWithItem(ModBlocks.RAW_SAPPHIRE_BLOCK);
-        blockWithItem(ModBlocks.ASH_BLOCK);
-
         blockWithItem(ModBlocks.SAPPHIRE_ORE);
         blockWithItem(ModBlocks.END_STONE_SAPPHIRE_ORE);
         blockWithItem(ModBlocks.NETHER_SAPPHIRE_ORE);

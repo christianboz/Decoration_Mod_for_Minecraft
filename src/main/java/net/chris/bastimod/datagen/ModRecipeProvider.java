@@ -13,6 +13,7 @@ import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
@@ -56,7 +57,61 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
                 .save(pWriter);
 
-        BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD, ModItems.SAPPHIRE.get(), ModPotions.TEA_POTION.get()));
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CAULDRON_CLAY_BLOCK.get())
+                .pattern("B B")
+                .pattern("B B")
+                .pattern("BBB")
+                .define('B', Items.BRICK)
+                .unlockedBy(getHasName(Items.BRICK), has(Items.BRICK))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CAULDRON_COPPER_BLOCK.get())
+                .pattern("C C")
+                .pattern("C C")
+                .pattern("CCC")
+                .define('C', Items.COPPER_INGOT)
+                .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CAULDRON_REINFORCED_COPPER_BLOCK.get())
+                .pattern("G G")
+                .pattern("GCG")
+                .pattern("GGG")
+                .define('C', ModBlocks.CAULDRON_COPPER_BLOCK.get())
+                .define('G', Items.GOLD_INGOT)
+                .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                .unlockedBy(getHasName(ModBlocks.CAULDRON_COPPER_BLOCK.get()), has(ModBlocks.CAULDRON_COPPER_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MIXTURE_BOTTLE.get(),3)
+                .pattern("G G")
+                .pattern("G G")
+                .pattern(" G ")
+                .define('G', Items.GLASS)
+                .unlockedBy(getHasName(Items.GLASS), has(Items.GLASS))
+                .save(pWriter);
+
+//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MIXTURE_BARREL_BLOCK.get())
+//                .pattern("HHH")
+//                .pattern("HBH")
+//                .pattern("HHH")
+//                .define('H', Items.HONEYCOMB)
+//                .define('B', Items.BARREL)
+//                .unlockedBy(getHasName(Items.HONEYCOMB), has(Items.HONEYCOMB))
+//                .unlockedBy(getHasName(Items.BARREL), has(Items.BARREL))
+//                .save(pWriter);
+//
+//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.REINFORCED_MIXTURE_BARREL_BLOCK.get())
+//                .pattern("GGG")
+//                .pattern("GMG")
+//                .pattern("GGG")
+//                .define('M', ModBlocks.MIXTURE_BARREL_BLOCK.get())
+//                .define('G', Items.GOLD_INGOT)
+//                .unlockedBy(getHasName(ModBlocks.MIXTURE_BARREL_BLOCK.get()), has(ModBlocks.MIXTURE_BARREL_BLOCK.get()))
+//                .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+//                .save(pWriter);
+
+        BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.WATER, Blocks.OAK_LEAVES, ModPotions.TEA_POTION.get()));
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

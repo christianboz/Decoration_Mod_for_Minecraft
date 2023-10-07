@@ -28,6 +28,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.FAKE_BREWING_STAND_BLOCK.get());
         this.dropSelf(ModBlocks.ASH_BLOCK.get());
 
+        this.dropSelf(ModBlocks.CAULDRON_REINFORCED_COPPER_BLOCK.get());
+        this.dropSelf(ModBlocks.CAULDRON_COPPER_BLOCK.get());
+        this.dropSelf(ModBlocks.CAULDRON_CLAY_BLOCK.get());
+//        this.dropSelf(ModBlocks.MIXTURE_BARREL_BLOCK.get());
+//        this.dropSelf(ModBlocks.REINFORCED_MIXTURE_BARREL_BLOCK.get());
+
         this.add(ModBlocks.SAPPHIRE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.SAPPHIRE_ORE.get(), ModItems.RAW_SAPPHIRE.get()));
         this.add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
