@@ -2,7 +2,9 @@ package net.chris.bastimod.block;
 
 import net.chris.bastimod.BastiMod;
 //import net.chris.bastimod.block.custom.FakeBrewingStandBlock;
+import net.chris.bastimod.block.custom.AshBlock;
 import net.chris.bastimod.item.ModItems;
+import net.chris.bastimod.sound.ModSounds;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -23,18 +25,18 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
 
     public static final RegistryObject<Block> CAULDRON_CLAY_BLOCK = registerBlock("cauldron_clay_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
+            () -> new CauldronBlock(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
     public static final RegistryObject<Block> CAULDRON_COPPER_BLOCK = registerBlock("cauldron_copper_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
+            () -> new CauldronBlock(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
     public static final RegistryObject<Block> CAULDRON_REINFORCED_COPPER_BLOCK = registerBlock("cauldron_reinforced_copper_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
+            () -> new CauldronBlock(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
 //    public static final RegistryObject<Block> MIXTURE_BARREL_BLOCK = registerBlock("mixture_barrel_block",
 //            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BARREL)));
 //    public static final RegistryObject<Block> REINFORCED_MIXTURE_BARREL_BLOCK = registerBlock("reinforced_mixture_barrel_block",
 //            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BARREL)));
 
     public static final RegistryObject<Block> ASH_BLOCK = registerBlock("ash_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND)));
+            () -> new AshBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
 
     public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
