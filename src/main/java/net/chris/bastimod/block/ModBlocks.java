@@ -3,8 +3,9 @@ package net.chris.bastimod.block;
 import net.chris.bastimod.BastiMod;
 //import net.chris.bastimod.block.custom.FakeBrewingStandBlock;
 import net.chris.bastimod.block.custom.AshBlock;
+import net.chris.bastimod.block.custom.CauldronClayBlock;
+import net.chris.bastimod.block.custom.WaterCauldronClayBlock;
 import net.chris.bastimod.item.ModItems;
-import net.chris.bastimod.sound.ModSounds;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -25,7 +26,9 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
 
     public static final RegistryObject<Block> CAULDRON_CLAY_BLOCK = registerBlock("cauldron_clay_block",
-            () -> new CauldronBlock(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
+            () -> new CauldronClayBlock(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
+    public static final RegistryObject<Block> WATER_CAULDRON_CLAY_BLOCK = registerBlock("water_cauldron_clay_block",
+            () -> new WaterCauldronClayBlock(BlockBehaviour.Properties.copy(Blocks.CAULDRON), CauldronClayInteraction.WATER));
     public static final RegistryObject<Block> CAULDRON_COPPER_BLOCK = registerBlock("cauldron_copper_block",
             () -> new CauldronBlock(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
     public static final RegistryObject<Block> CAULDRON_REINFORCED_COPPER_BLOCK = registerBlock("cauldron_reinforced_copper_block",
@@ -50,12 +53,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> END_STONE_SAPPHIRE_ORE = registerBlock("end_stone_sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3,5)));
-
     public static final RegistryObject<Block> RAW_SAPPHIRE_BLOCK = registerBlock("raw_sapphire_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_COPPER_BLOCK)));
-
-//    public static final RegistryObject<Block> FAKE_BREWING_STAND_BLOCK = registerBlock("fake_brewing_stand_block",
-//            () -> new FakeBrewingStandBlock(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

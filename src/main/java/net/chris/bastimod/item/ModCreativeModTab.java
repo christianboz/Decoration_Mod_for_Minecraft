@@ -28,6 +28,8 @@ public class ModCreativeModTab {
 
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
+                        pOutput.accept(ModBlocks.FAKE_FURNACE_BLOCK.get());
+
                         pOutput.accept(ModBlocks.SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
@@ -37,6 +39,7 @@ public class ModCreativeModTab {
                         pOutput.accept(ModBlocks.CAULDRON_COPPER_BLOCK.get());
                         pOutput.accept(ModBlocks.CAULDRON_REINFORCED_COPPER_BLOCK.get());
                         pOutput.accept(ModItems.MIXTURE_BOTTLE.get());
+                        pOutput.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
 
                     })
                     .build());

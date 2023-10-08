@@ -23,6 +23,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PINE_CONE);
         simpleItem(ModItems.STRAWBERRY);
         simpleItem(ModItems.MIXTURE_BOTTLE);
+        simpleItem(ModItems.BAR_BRAWL_MUSIC_DISC);
+        simpleItem(ModItems.DRIPSTONE_BASTI_MUSIC_DISC);
 
     }
 

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "level=1": {
+      "model": "bastimod:block/water_cauldron_clay_level1"
+    },
+    "level=2": {
+      "model": "bastimod:block/water_cauldron_clay_level2"
+    },
+    "level=3": {
+      "model": "bastimod:block/water_cauldron_clay_full"
+    }
+  }
+}
