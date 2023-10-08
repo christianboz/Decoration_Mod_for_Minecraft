@@ -3,6 +3,7 @@ package net.chris.bastimod.block;
 import net.chris.bastimod.BastiMod;
 //import net.chris.bastimod.block.custom.FakeBrewingStandBlock;
 import net.chris.bastimod.block.custom.AshBlock;
+import net.chris.bastimod.block.custom.FakeFurnaceBlock;
 import net.chris.bastimod.item.ModItems;
 import net.chris.bastimod.sound.ModSounds;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -56,6 +57,9 @@ public class ModBlocks {
 
 //    public static final RegistryObject<Block> FAKE_BREWING_STAND_BLOCK = registerBlock("fake_brewing_stand_block",
 //            () -> new FakeBrewingStandBlock(BlockBehaviour.Properties.copy(Blocks.CAULDRON)));
+
+    public static final RegistryObject<Block> FAKE_FURNACE_BLOCK = registerBlock("fake_furnace_block",
+            () -> new FakeFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.FURNACE).instabreak().strength(0.6f)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
