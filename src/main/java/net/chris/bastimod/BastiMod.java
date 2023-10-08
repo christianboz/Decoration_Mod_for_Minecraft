@@ -5,6 +5,7 @@ import net.chris.bastimod.block.ModBlocks;
 import net.chris.bastimod.item.ModCreativeModTab;
 import net.chris.bastimod.item.ModItems;
 import net.chris.bastimod.potion.ModPotions;
+import net.chris.bastimod.sound.ModSounds;
 import net.chris.bastimod.util.BetterBrewingRecipe;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.alchemy.Potions;
@@ -39,6 +40,7 @@ public class BastiMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModPotions.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

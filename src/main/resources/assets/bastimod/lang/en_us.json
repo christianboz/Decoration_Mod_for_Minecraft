@@ -28,5 +28,7 @@
 
   "block.bastimod.fake_brewing_stand_block": "Fake Brewing Stand",
 
+  "sounds.bastimod.metal_detector_found_ore": "Metal Detector Jingle",
+
   "creativetab.basti_tab": "Sapphire Basti Tab"
 }

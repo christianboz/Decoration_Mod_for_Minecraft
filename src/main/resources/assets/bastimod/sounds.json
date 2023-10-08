@@ -1,0 +1,38 @@
+{
+  "metal_detector_found_ore": {
+    "subtitle": "sounds.bastimod.metal_detector_found_ore",
+    "sounds": [
+      "bastimod:metal_detector_found_ore"
+    ]
+  },
+  "sound_block_break": {
+    "subtitle": "sounds.bastimod.sound_block_break",
+    "sounds": [
+      "bastimod:sound_block_break"
+    ]
+  },
+  "sound_block_step": {
+  "subtitle": "sounds.bastimod.sound_block_step",
+  "sounds": [
+    "bastimod:sound_block_step"
+    ]
+  },
+  "sound_block_place": {
+    "subtitle": "sounds.bastimod.sound_block_place",
+    "sounds": [
+      "bastimod:sound_block_place"
+    ]
+  },
+  "sound_block_hit": {
+    "subtitle": "sounds.bastimod.sound_block_hit",
+    "sounds": [
+      "bastimod:sound_block_hit"
+    ]
+  },
+  "sound_block_fall": {
+    "subtitle": "sounds.bastimod.sound_block_fall",
+    "sounds": [
+      "bastimod:sound_block_fall"
+    ]
+  }
+}
