@@ -34,5 +34,21 @@
     "sounds": [
       "bastimod:sound_block_fall"
     ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+      "name": "bastimod:bar_brawl",
+        "stream": true
+      }
+    ]
+  },
+  "dripstone_basti": {
+    "sounds": [
+      {
+        "name": "bastimod:dripstone_basti",
+        "stream": true
+      }
+    ]
   }
 }

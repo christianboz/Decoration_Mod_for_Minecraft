@@ -111,7 +111,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 //                .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
 //                .save(pWriter);
 
-        BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.WATER, Blocks.OAK_LEAVES, ModPotions.TEA_POTION.get()));
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

@@ -1,0 +1,11 @@
+{
+  "parent": "bastimod:block/template_cauldron_clay_level2",
+  "textures": {
+    "bottom": "bastimod:block/cauldron_bottom_clay",
+    "content": "minecraft:block/water_still",
+    "inside": "bastimod:block/cauldron_inner_clay",
+    "particle": "minecraft:block/cauldron_side",
+    "side": "bastimod:block/cauldron_side_clay",
+    "top": "bastimod:block/cauldron_top_clay"
+  }
+}

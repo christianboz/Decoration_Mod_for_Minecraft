@@ -37,6 +37,7 @@ public class ModCreativeModTab {
                         pOutput.accept(ModBlocks.CAULDRON_COPPER_BLOCK.get());
                         pOutput.accept(ModBlocks.CAULDRON_REINFORCED_COPPER_BLOCK.get());
                         pOutput.accept(ModItems.MIXTURE_BOTTLE.get());
+                        pOutput.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
 
                     })
                     .build());

@@ -1,0 +1,11 @@
+// 1.20.1	2023-10-08T12:22:13.8909778	Loot Tables
+995ff7c1561140648663fa31f68a745b8f4d2396 data/bastimod/loot_tables/blocks/ash_block.json
+84747328a8e7285ae3f1814e5bddb15715c71c26 data/bastimod/loot_tables/blocks/cauldron_clay_block.json
+7f77f41d6e7912d436fc069bc828e6add1665ceb data/bastimod/loot_tables/blocks/cauldron_copper_block.json
+8b7fad7a44eb79780cb62f093c46d10edd13b833 data/bastimod/loot_tables/blocks/cauldron_reinforced_copper_block.json
+8922082a335fa01fb8f3e961ba415ff1f42d4907 data/bastimod/loot_tables/blocks/deepslate_sapphire_ore.json
+d55cd9cd547d4ea025d429c828e367c6a86dfcbc data/bastimod/loot_tables/blocks/end_stone_sapphire_ore.json
+0d55fadfd003b041e9500fdbfa11b0145c736f40 data/bastimod/loot_tables/blocks/nether_sapphire_ore.json
+56036b0c46443bbac7e159a3b9f6572060ea22db data/bastimod/loot_tables/blocks/raw_sapphire_block.json
+02ac18dbc9396d847a438b12275d0c07474d0ac1 data/bastimod/loot_tables/blocks/sapphire_block.json
+ee02ce476ecee38e51a6db0d6df03b34057cd3fe data/bastimod/loot_tables/blocks/sapphire_ore.json

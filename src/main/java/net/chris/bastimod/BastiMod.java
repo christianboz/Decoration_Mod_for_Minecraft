@@ -1,6 +1,7 @@
 package net.chris.bastimod;
 
 import com.mojang.logging.LogUtils;
+import net.chris.bastimod.block.CauldronClayInteraction;
 import net.chris.bastimod.block.ModBlocks;
 import net.chris.bastimod.item.ModCreativeModTab;
 import net.chris.bastimod.item.ModItems;
@@ -51,6 +52,7 @@ public class BastiMod
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
+            CauldronClayInteraction.boostrap();
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.WATER, Blocks.OAK_LEAVES, ModPotions.TEA_POTION.get()));
         });
     }

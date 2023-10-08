@@ -4,6 +4,10 @@
   "item.bastimod.pine_cone": "Pine Cone",
   "item.bastimod.raw_sapphire": "Raw Sapphire",
   "item.bastimod.mixture_bottle": "Mixture Bottle",
+  "item.bastimod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.bastimod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+  "item.bastimod.dripstone_basti_music_disc": "Dripstone Basti Music Disc",
+  "item.bastimod.dripstone_basti_music_disc.desc": "Basti - Dripstone (SWAG01)",
 
   "item.minecraft.potion.effect.tea_potion": "Tea",
   "item.minecraft.splash_potion.effect.tea_potion": "Splash Tea",
